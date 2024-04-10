@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-5 h1">Check existing ideas of trips:</div>
+    </div>
+    <HR>
+    <br>
+    <div class="row justify-content-start">
+        <div class="col-5 h5">Please select a name:</div>
+    </div><br>
+    <div class="row justify-content-start">
+        <div class="col-5 text-grey">Trip name</div>
+    </div>
+    <form id="trip_name" action="" method="POST">
+        <div class="row justify-content-start">
+            <div class="col-5">
+                <select id="trip" name="trip" class="form-select">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select><br>
+            </div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-5"><input type="submit" value="Submit" class="btn btn-primary" ></div>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
